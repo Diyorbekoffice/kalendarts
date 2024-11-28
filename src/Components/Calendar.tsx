@@ -10,7 +10,6 @@ const Calendar: FC = () => {
   const [events, setEvents] = useState<Map<number, { name: string; title: string }>>(new Map()); // Store events
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState<number | null>(null);
-  const [eventToEdit, setEventToEdit] = useState<{ name: string; title: string; date: number } | null>(null); // New state for event editing
 
   const today = new Date();
 
